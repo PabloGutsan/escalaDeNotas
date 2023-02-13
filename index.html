@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pablo Gutiérrez">
+    <title>PabloGutsan</title>
+    <!-- Favicon -->
+    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="./assets/css/argon.css?v=1.0.0" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Sidenav -->
+   
+
+    <!-- Main content -->
+    <div class="main-content">
+
+        <div class="container-fluid mt-4">
+
+            <!-- Table -->
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow pb-5">
+                        <div class="card-header bg-white">
+                            <h3 class="mb-0 ">Escala de notas</h3>
+                        </div>
+                        <div class="card-body ">
+                            <div class="icon-examples">
+
+                                <div class="container">
+                                    <div class="cuadro-calcular  mt-4 box-result">
+                                        <div class="input-group pl-3  ">
+                                            <span class="input-text my-2" id="">Nota mínima</span>
+                                            <input type="text" class="input-note text-center my-2" onkeyup="format(this)" onchange="format(this)" id="notaMinima" value="1.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <span class="input-text my-2" id="">Nota máxima</span>
+                                            <input type="text" class="input-note text-center my-2"  id="notaMaxima" value="7.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <span class="input-text my-2" id="">Nota aprobación</span>
+                                            <input type="text" class="input-note text-center my-2"  id="notaAprobacion" value="4.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <span class="input-text my-2" id="">Exigencia</span>
+                                            <input type="text" class="input-note text-center my-2"  id="exigencia" value="60.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <span class="input-text my-2" id="">Puntaje máximo</span>
+                                            <input type="text" class="input-note text-center my-2"  id="puntajeMaximo" value="120.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                            <span class="input-text my-2" id="">Incremento</span>
+                                            <input type="text" class="input-note text-center my-2"  id="incremento" value="1.0"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="px-4 text-center">
+                                            <button type="submit" class="bg-gradient-primary btn-note btn my-2" id="btnCalcular">Calcular</button>
+                                        </div>
+                                    </div>
+
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class=" my-3 text-center py-2 box-result mx-3 mt-3">
+                                        <table class="table-result">
+                                            <thead class="title-table">
+                                                <tr>
+                                                    <th>Puntaje</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="">
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1.9</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Optional JS -->
+    <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="./assets/js/argon.js?v=1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/calcularNotas.js" type="text/js"></script>
+
+</body>
+
+</html>
